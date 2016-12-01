@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jiliguala</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Roboto Font -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+
+  <!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+  <!-- Custom -->
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+</end>
+<body>
+  <div class="mdl-grid">
+
+  <!-- SIGNIN/UP MARKUP -->
+  <div class="mdl-card mdl-shadow--2dp hover-shadow">
+    <div class="mdl-card__title "id="tilteimg">
+      <h2 class="mdl-card__title-text">Sign Up/In/Out</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <!-- Sign/In/Out Form -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="email">
+          <label class="mdl-textfield__label" for="email">E-mail</label>
+        </div>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="password" id="password">
+          <label class="mdl-textfield__label" for="password">Password</label>
+        </div>
+      </form>
+
+      <!-- SignIn/SignOut Button -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="btnSignIn">Sign In</button>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id ="btnSignOut">Sign Out</button>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="btnSignUp">Sign Up</button>
+
+
+      <!-- Sign Information -->
+      <div class="mdl-card__supporting-text" id="sign-info">No one login...</div>
+    </div>
+  </div><!-- mdl-card -->
+
+  <!-- PROFILE Update MARKUP -->
+  <div class="mdl-card mdl-shadow--2dp hover-shadow">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">User Info Update</h2>
+    </div>
+
+    <div class="mdl-card__supporting-text">
+      <!-- User Info Form -->
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="userName">
+          <label class="mdl-textfield__label" for="sample1">User Name</label>
+        </div>
+      </form>
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="input_occu">
+          <label class="mdl-textfield__label" for="sample1">Occupation</label>
+        </div>
+      </form>
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="input_age">
+          <label class="mdl-textfield__label" for="sample1">Age</label>
+        </div>
+      </form>
+
+      <!-- user photo upload -->
+        <div class="mdl-textfield mdl-js-textfield">
+          <h6>Your photo: </h6>
+          <input type="file" id="file" name="file"/>
+        </div>
+
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="input_des">
+          <label class="mdl-textfield__label" for="sample1">Descriptions</label>
+        </div>
+      </form>
+
+
+      <!-- SignIn/SignUp/Logout Button -->
+      <button class="mdl-button mdl-js-button mdl-button--raised" id="btnSubmit">Submit</button>
+    </div>
+  </div>
+
+
+  <!-- Profile MARKUP -->
+  <div class="mdl-card mdl-shadow--2dp hover-shadow">
+    <div class="mdl-card__title"id="#tilteimg2">
+      <h2 class="mdl-card__title-text">User Info</h2>
+    </div>
+    <div class="mdl-grid">
+      <div class="mdl-card__supporting-text" id="user-pic">
+        <img src="" class="demo-avatar">
+      </div>
+      <div class="mdl-card__supporting-text" id="user-info">
+        <ul id='example-messages' class="example-chat-messages">
+          <li><strong>Name</strong>: <span id="profile-name">N/A</span></li>
+          <li><strong>Email</strong>: <span id="profile-email">N/A</span></li>
+          <li><strong>Occupation</strong>: <span id="profile-occupation">N/A</span></li>
+          <li><strong>Age</strong>: <span id="profile-age">N/A</span></li>
+          <li><strong>Descriptions</strong>: <span id="profile-descriptions">N/A</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--Chat Room -->
+<div class="chat" >
+ <div class="mdl-card mdl-shadow--2dp hover-shadow">
+  <div class="mdl-card__title"id="#tilteimg2" >
+    <h2 class="mdl-card__title-text">Chat Room</h2>
+  </div>
+    <div class="mdl-card__supporting-text">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="nameInput" placeholder="Enter a username ...">
+      </div>
+
+      <ul id='example-messages2' class="example-chat-messages"></ul>
+
+      <footer>
+        <div class="mdl-layout__content mdl-color--grey-100">
+          <input class="mdl-textfield__input" style="display:inline;width:auto;" type="text" id="messageInput" name="email" placeholder="Type a message ..."/>
+        </div>
+      </footer>
+    </div>
+ </div>
+</div>
+
+</div>
+</body>
+</html>

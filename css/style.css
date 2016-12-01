@@ -1,0 +1,91 @@
+body{
+
+  background: url('../img/2.jpg')center / cover;
+}
+.mdl-card {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chat  {
+
+  margin-left: auto;
+  margin-right: auto;
+}
+#tilteimg{
+  color: #fff;
+  height: 176px;
+  background: url('../img/1.jpg') center / cover;
+}
+
+
+
+#sign-info {
+  color: #00BCD4;
+  font-size: 120%;
+}
+
+#user-info {
+  padding: 10px;
+  width: 216px;
+  box-sizing: border-box;
+}
+
+#user-pic {
+  padding:10px;
+  width: 72px;
+  box-sizing: border-box;
+}
+
+
+
+input(type="password") {
+  font:large;
+  font-size:150%;
+}
+
+.demo-avatar {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+ul li {
+    font-family: Roboto;
+    /*font-size: 120%;*/
+    /*font-weight: 300;*/
+    /*margin-bottom: 10px;*/
+    line-height: 24px;
+}
+
+.chat ul {
+  list-style: none;
+  margin: 0px;
+  padding: 20px;
+  height: 200px;
+  overflow: auto;
+}
+.chat ul li {
+    font-family: Roboto;
+    font-size: 120%;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+.chat ul li:last-child {
+    margin: 0px;
+}
+.chat ul .example-chat-username {
+    margin-right: 10px;
+}
+
+.chatimg{
+  width: 40px;
+  height: 40px;
+  margin: 5px 5px 5px 5px;
+}
